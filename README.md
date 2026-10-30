@@ -1,17 +1,57 @@
-# flutter_application_1
+# age_calculator
 
-A new Flutter project.
+A focused age calculator with date handling and internationalised formatting.
+
+## Highlights
+
+- Pick any date and get the age calculated instantly.
+- Date maths isolated in `Model` and shared through `globalVariale`.
+- Formatting via `intl` so output follows the user's locale.
+
+## Tech Stack
+
+| Concern | Choice |
+|---|---|
+| UI | Flutter, Material |
+| Date formatting | `intl` |
+| Assets | Custom bundled fonts |
+
+## Project Structure
+
+```
+lib/
+- `Age_calculator`
+- `HomeScreen`
+- `Model`
+- `globalVariale`
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter `>= 3.16` (Dart `>= 3.2`)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Run
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# age_calculator
+```bash
+git clone https://github.com/developer-rahim/age_calculator.git
+cd age_calculator
+flutter pub get
+flutter run
+```
+
+### Test
+
+```bash
+flutter test
+flutter analyze
+```
+
+## Notes
+
+Uses a bundled font in `fonts/` for a consistent typographic look.
+
+## License
+
+Released under the MIT License.
